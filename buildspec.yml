@@ -10,7 +10,7 @@ phases:
       - pwd
       - "docker build -t $IMAGE_REPO_NAME ."
       - "docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG"
-  discard-paths: true
+  discard-paths: yes
   files: 
     - target/messageUtil-1.0.jar
   install: 
