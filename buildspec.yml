@@ -27,4 +27,4 @@ phases:
   pre_build: 
     commands: 
       - "echo Logging in to Amazon ECR..."
-version: 0.1
+version: 0.2
